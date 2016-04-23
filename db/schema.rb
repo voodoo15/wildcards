@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160423154412) do
+ActiveRecord::Schema.define(version: 20160423171841) do
 
   create_table "profiles", force: :cascade do |t|
     t.integer  "team_id"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20160423154412) do
     t.string   "bats"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "user_id"
+    t.integer  "admin_id"
   end
 
   create_table "users", force: :cascade do |t|
