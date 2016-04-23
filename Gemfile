@@ -32,6 +32,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use Chatty for gmail-like chat
+gem 'chatty', '~> 0.0.6'
+
+# Use Paperclip for easy uploading management
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+
+#Use Devise for user authentication and session control
+gem 'devise', '~> 4.0'
+
+#Use Devise Invitable to email invite new users
+gem 'devise_invitable', '~> 1.5', '>= 1.5.5'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -44,4 +56,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
