@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  #before_create :build_default_profile
+  after_create :create_profile
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -7,12 +7,11 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_one :profile
-  has_one :team, through:  :profile
 
   private
-  def build_default_profile
-    build_profile
-    true
+
+  def create_profile
+    self.build_profile
   end
 
 end

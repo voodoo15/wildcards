@@ -27,6 +27,59 @@
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 
+  <%= fields_for resource.profile do | profile |  %>
+
+  <div>
+    <%= profile.label :first_name %><br />
+    <%= profile.text_field :first_name %>
+  </div>
+  <div>
+    <%= profile.label :last_name %><br />
+    <%= profile.text_field :last_name %>
+  </div>
+  <div>
+    <%= profile.label :nickname %><br />
+    <%= profile.text_field :nickname %>
+  </div>
+  <div>
+    <%= profile.label :team_number %><br />
+    <%= profile.text_field :team_number %>
+  </div>
+  <div>
+    <%= profile.label :address %><br />
+    <%= profile.text_field :address %>
+  </div>
+  <div>
+    <%= profile.label :city %><br />
+    <%= profile.text_field :city %>
+  </div>
+  <div>
+    <%= profile.label :province %><br />
+    <%= profile.text_field :province %>
+  </div>
+  <div>
+    <%= profile.label :postal_code %><br />
+    <%= profile.text_field :postal_code %>
+  </div>
+  <div>
+    <%= profile.label :province %><br />
+    <%= profile.text_field :province %>
+  </div>
+  <div>
+    <%= profile.label :phone_number %><br />
+    <%= profile.text_field :phone_number %>
+  </div>
+  <div>
+    <%= profile.label :throws %><br />
+    <%= select_tag( :throws, options_for_select( [ [ 'Right', 'R' ], [ 'Left', 'L' ] ] ) ) %>
+  </div>
+  <div>
+    <%= profile.label :bats %><br />
+    <%= select_tag( :bats, options_for_select( [ [ 'Right', 'R' ], [ 'Left', 'L' ], [ 'Switch', 'S' ] ] ) ) %>
+  </div>
+
+  <% end %>
+
   <div class="actions">
     <%= f.submit "Update" %>
   </div>

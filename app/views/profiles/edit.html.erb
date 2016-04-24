@@ -1,0 +1,60 @@
+<h1>Edit User Profile</h1>
+<%= form_for @profile do | profile | %>
+<%= fields_for @profile.user do | user | %>
+<div>
+  <%= user.label :email %><br />
+  <%= user.email_field :email %>
+</div>
+<% end %>
+<div>
+  <%= profile.label :first_name %><br />
+  <%= profile.text_field :first_name %>
+</div>
+<div>
+  <%= profile.label :last_name %><br />
+  <%= profile.text_field :last_name %>
+</div>
+<div>
+  <%= profile.label :nickname %><br />
+  <%= profile.text_field :nickname %>
+</div>
+<div>
+  <%= profile.label :team_number %><br />
+  <%= profile.text_field :team_number %>
+</div>
+<div>
+  <%= profile.label :address %><br />
+  <%= profile.text_field :address %>
+</div>
+<div>
+  <%= profile.label :city %><br />
+  <%= profile.text_field :city %>
+</div>
+<div>
+  <%= profile.label :province %><br />
+  <%= profile.text_field :province %>
+</div>
+<div>
+  <%= profile.label :postal_code %><br />
+  <%= profile.text_field :postal_code %>
+</div>
+<div>
+  <%= profile.label :province %><br />
+  <%= profile.text_field :province %>
+</div>
+<div>
+  <%= profile.label :phone_number %><br />
+  <%= profile.text_field :phone_number %>
+</div>
+<div>
+  <%= profile.label :throws %><br />
+  <%= profile.text_field :throws ) %>
+</div>
+<div>
+  <%= profile.label :bats %><br />
+  <%= profile.text_field :bats %>
+</div>
+<div>
+  <%= profile.submit %>
+</div>
+<% end %>
