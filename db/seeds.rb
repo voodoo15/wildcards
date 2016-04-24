@@ -12,6 +12,12 @@ Team.create!(
             team_abbreviation:  'AMN'
 )
 
+Team.create!(
+            team_name:  'Wildcards',
+            tier:  '3',
+            team_abbreviation:  'WCD'
+)
+
 User.create!(email: 'bubba_smith@gmail.com',
              password: '123456',
              password_confirmation: '123456'
@@ -32,4 +38,13 @@ Profile.create!(
             throws:  'R',
             bats:  'R',
             user_id:  1
+)
+
+Game.create!(
+            date:  '2016-05-08 17:00',
+            score_for:  0,
+            score_against:  0,
+            home_team_id:  2,
+            away_team_id:  1,
+            game_diamond:  "Miliken 5"
 )
