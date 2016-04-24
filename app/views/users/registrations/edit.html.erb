@@ -71,11 +71,13 @@
   </div>
   <div>
     <%= profile.label :throws %><br />
-    <%= select_tag( :throws, options_for_select( [ [ 'Right', 'R' ], [ 'Left', 'L' ] ] ) ) %>
+    <%= profile.text_field :throws %>
+    <!-- <%= select_tag( :throws, options_for_select( [ [ 'Right', 'R' ], [ 'Left', 'L' ] ], selected: :throws ) ) %> -->
   </div>
   <div>
     <%= profile.label :bats %><br />
-    <%= select_tag( :bats, options_for_select( [ [ 'Right', 'R' ], [ 'Left', 'L' ], [ 'Switch', 'S' ] ] ) ) %>
+    <%= profile.text_field :bats %>
+    <!-- <%= select_tag( :bats, options_for_select( [ [ 'Right', 'R' ], [ 'Left', 'L' ], [ 'Switch', 'S' ] ], selected: :bats ) ) %> -->
   </div>
 
   <% end %>
