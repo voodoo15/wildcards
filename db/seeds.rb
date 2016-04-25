@@ -33,7 +33,7 @@ Profile.create!(
             city:  'Toronto',
             province:  'ON',
             postal_code:  'A1B 2C3',
-            role:  'administrator',
+            admin:  false,
             phone_number:  '4161234567',
             throws:  'R',
             bats:  'R',
