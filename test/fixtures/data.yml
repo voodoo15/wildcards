@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plate_app: 1
+  at_bats: 1
+  1_base: 1
+  2_base: 1
+  3_base: 1
+  homeruns: 1
+  hits: 1
+  rbi: 
+  runs: 1
+  walks: 1
+  strikeouts: 1
+  sac: 1
+  profile_id: 1
+
+two:
+  plate_app: 1
+  at_bats: 1
+  1_base: 1
+  2_base: 1
+  3_base: 1
+  homeruns: 1
+  hits: 1
+  rbi: 
+  runs: 1
+  walks: 1
+  strikeouts: 1
+  sac: 1
+  profile_id: 1
