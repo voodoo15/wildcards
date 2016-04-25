@@ -29,7 +29,7 @@ class TeamsController < ApplicationController
     @team = Team.new( team_params )
 
     if @team.save
-      redirect_to root_url, notice: "Team created"
+      redirect_to teams_url, notice: "Team created"
     else
       render "new"
     end
@@ -42,7 +42,7 @@ class TeamsController < ApplicationController
   def destroy
     @team = Team.find( params[ :id ] )
     @team.destroy
-    redirect_to root_url, notice:  "Team removed"
+    redirect_to teams_url, notice:  "Team removed"
   end
 
   private
