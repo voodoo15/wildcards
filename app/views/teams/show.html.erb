@@ -1,0 +1,9 @@
+<h1>Team Details</h1>
+
+Team Name:  <%= @team.team_name %> <br />
+Team Abbreviation: <%= @team.team_abbreviation %><br />
+Group Tier:  <%= @team.tier %>
+
+<%= button_to "Edit", edit_team_path, method: 'get' %>
+<%= button_to "Delete", team_path, method: 'delete' %>
+<%= link_to "Back", :back %>

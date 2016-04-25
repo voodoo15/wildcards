@@ -1,0 +1,18 @@
+<%= form_for @team do | team | %>
+<p>
+  <%= team.label :team_name %><br />
+  <%= team.text_field :team_name %>
+</p>
+<p>
+  <%= team.label :team_abbreviation %><br />
+  <%= team.text_field :team_abbreviation %>
+</p>
+<p>
+  <%= team.label :tier %><br />
+  <%= team.text_field :tier %>
+</p>
+<p>
+  <%= team.submit "Submit" %>
+</p>
+
+<% end %>

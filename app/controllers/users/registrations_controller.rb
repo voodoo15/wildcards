@@ -62,9 +62,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
     # end
 
       def profile_params
-        params.require(:profile).permit(:first_name, :last_name, :nickname, :team_number, :address,
-                                        :city, :province, :postal_code, :province, :phone_number,
-                                        :throws, :bats )
+        params.require( :profile ).permit( :first_name, :last_name, :nickname, :team_number, :address,
+                                           :city, :province, :postal_code, :province, :phone_number,
+                                           :throws, :bats )
       end
 
 end

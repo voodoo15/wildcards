@@ -50,7 +50,7 @@ Profile.create!(
             phone_number:  '4161234567',
             throws:  'R',
             bats:  'R',
-            user_id:  4
+            user_id:  1
 )
 
 Profile.create!(
@@ -67,7 +67,7 @@ Profile.create!(
             phone_number:  '4161234567',
             throws:  'L',
             bats:  'S',
-            user_id:  5
+            user_id:  2
 )
 
 Profile.create!(
@@ -84,7 +84,7 @@ Profile.create!(
             phone_number:  '4161234567',
             throws:  'R',
             bats:  'R',
-            user_id:  6
+            user_id:  3
 )
 
 Stat.create!(

@@ -1,0 +1,14 @@
+<h1>Team List</h1>
+
+<% @team.each do | team | %>
+
+
+  <p>
+    Team Name:  <%= link_to team.team_name, team_path( team.id ) %> <br />
+  </p>
+
+<% end %>
+
+<% if current_user.profile.admin %>
+  <%= link_to "New", new_team_path %>
+<% end %>
