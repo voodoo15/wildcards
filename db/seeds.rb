@@ -40,6 +40,22 @@ Profile.create!(
             user_id:  1
 )
 
+Stat.create!(
+              plate_app:  4,
+              at_bat:  4,
+              first_base:  1,
+              second_base:  1,
+              third_base:  0,
+              homerun:  0,
+              hit:  2,
+              rbi:  1,
+              run:  1,
+              walk:  1,
+              strikeout:  1,
+              sac_fly:  0,
+              profile_id:  2,
+              game_id:  1
+)
 Game.create!(
             date:  '2016-05-08 17:00',
             score_for:  0,
