@@ -11,25 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160424235754) do
-
-  create_table "data", force: :cascade do |t|
-    t.integer  "plate_app"
-    t.integer  "at_bat"
-    t.integer  "first_base"
-    t.integer  "second_base"
-    t.integer  "third_base"
-    t.integer  "homerun"
-    t.integer  "hit"
-    t.integer  "rbi"
-    t.integer  "run"
-    t.integer  "walk"
-    t.integer  "strikeout"
-    t.integer  "sac_fly"
-    t.integer  "profile_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
+ActiveRecord::Schema.define(version: 20160425001248) do
 
   create_table "games", force: :cascade do |t|
     t.datetime "date"
@@ -60,6 +42,24 @@ ActiveRecord::Schema.define(version: 20160424235754) do
     t.datetime "updated_at",   null: false
     t.integer  "user_id"
     t.integer  "admin_id"
+  end
+
+  create_table "stats", force: :cascade do |t|
+    t.integer  "plate_app"
+    t.integer  "at_bat"
+    t.integer  "first_base"
+    t.integer  "second_base"
+    t.integer  "third_base"
+    t.integer  "homerun"
+    t.integer  "hit"
+    t.integer  "rbi"
+    t.integer  "run"
+    t.integer  "walk"
+    t.integer  "strikeout"
+    t.integer  "sac_fly"
+    t.integer  "profile_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "teams", force: :cascade do |t|
